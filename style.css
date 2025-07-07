@@ -1,0 +1,716 @@
+body {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+
+.header {
+    width: 100%;
+    height: 35vh;
+    background-image: url(./resources/background-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.title h1 {
+    font-size: 22px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+}
+
+.title div {
+    height: 20px;
+    width: 60px;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-size: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container-checkout {
+    width: 1000px;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+}
+
+.checkout {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px 500px;
+}
+
+.menu {
+    background-color: #EAEFEF;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.product {
+    display: flex;
+    width: 90%;
+    height: 80px;
+    margin: 10px 0 0 20px;
+}
+
+.bottom {
+    padding-bottom: 20px;
+}
+
+.item {
+    background-color: #F4F6FF;
+    height: 70px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 15px;
+    border: 1px solid lightgray;
+}
+
+.item img {
+    height: 55px;
+}
+
+.details {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.details-item {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.details-item p {
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+.golden {
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: gray;
+}
+
+.quantity {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    color: gray;
+}
+
+.quantity a {
+    width: 20px;
+    height: 20px;
+}
+
+.quantity a img {
+    display: flex;
+    height: 20px;
+}
+
+.border {
+    width: 450px;
+    height: 1px;
+    margin: 15px auto;
+    background-color: lightgrey;
+}
+
+.coupon {
+    width: 450px;
+    display: flex;
+    margin: 10px auto;
+}
+
+.text-coupon {
+    height: 40px;
+    width: 320px;
+    border-radius: 8px;
+    margin-right: 10px;
+    border: 1px solid lightgray;
+    padding-left: 10px;
+}
+
+.button-a {
+    height: 40px;
+    width: 130px;
+    border-radius: 8px;
+    background-color: #212121;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.button-a:hover {
+    background-color: whitesmoke;
+    color: #212121;
+    border: 1px solid lightgrey;
+}
+
+.button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.total-container {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.sub-total {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: gray;
+}
+
+.total {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #212121;
+}
+
+.contact {
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.contact-container {
+    width: 90%;
+    margin: 0 20px;
+    padding-top: 13px;
+}
+
+form h2 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #212121;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 10px;
+}
+
+form p {
+    font-size: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gray;
+    font-weight: 600;
+}
+
+.name-email {
+    height: 40px;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    background-color: #EAEFEF;
+    color: gray;
+    font-size: 12px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.contact-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px auto;
+    column-gap: 20px;
+} 
+
+.select {
+    height: 40px;
+    width: 215px;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    background-color: #EAEFEF;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.postal {
+    width: 215px;
+    height: 35px;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    background-color: #EAEFEF;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.continue {
+    height: 40px;
+    width: 462px;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    border-radius: 8px;
+    color: #EAEFEF;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+.continue:hover {
+    background-color: #EAEFEF;
+    color: #212121;
+    border: 1px solid lightgray;
+}
+
+@media ( max-width: 1024px) and ( min-width: 770px) {
+    
+    .container-checkout {
+        width: 100%;
+        height: 100vh;
+        padding: 0;
+        margin: 0 auto;
+    }
+    
+    .checkout {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 400px 400px;
+        grid-template-rows: 500px 500px;
+        margin: 0 110px;
+    }
+    
+    
+    .bottom {
+        padding-bottom: 20px;
+    }
+    
+    .item {
+        background-color: #F4F6FF;
+        height: 70px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        margin-top: 15px;
+        border: 1px solid lightgray;
+    }
+    
+    .border {
+        width: 350px;
+        height: 1px;
+        margin: 15px auto;
+        background-color: lightgrey;
+    }
+    
+    .coupon {
+        width: 350px;
+        display: flex;
+        margin: 10px auto;
+    }
+    
+    .text-coupon {
+        height: 40px;
+        width: 220px;
+        border-radius: 8px;
+        margin-right: 10px;
+        border: 1px solid lightgray;
+        padding-left: 10px;
+    }
+    
+    .total-container {
+        width: 350px;
+        margin: 0 auto;
+    }
+    
+    .contact-container {
+        width: 90%;
+        height: 100vh;
+        margin: 0 20px;
+        padding-top: 13px;
+    }
+    
+    .name-email {
+        height: 40px;
+        width: 350px;
+        border: 1px solid lightgray;
+        border-radius: 8px;
+        background-color: #EAEFEF;
+        color: gray;
+        font-size: 12px;
+        font-weight: 500;
+        padding-left: 10px;
+    }
+    
+    .contact-grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 10px auto;
+        column-gap: 20px;
+    } 
+    
+    .select {
+        height: 40px;
+        width: 160px;
+        border-radius: 8px;
+        border: 1px solid lightgray;
+        background-color: #EAEFEF;
+        padding-left: 10px;
+        font-size: 14px;
+    }
+    
+    .postal {
+        width: 160px;
+        height: 35px;
+        border-radius: 8px;
+        border: 1px solid lightgray;
+        background-color: #EAEFEF;
+        padding-left: 10px;
+        font-size: 14px;
+    }
+    
+    .continue {
+        height: 40px;
+        width: 360px;
+        background-color: #212121;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        border-radius: 8px;
+        color: #EAEFEF;
+        text-decoration: none;
+        letter-spacing: 1px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 600;
+    }
+    
+    .continue:hover {
+        background-color: #EAEFEF;
+        color: #212121;
+        border: 1px solid lightgray;
+    }
+}
+
+@media ( max-width: 768px) {
+    
+    .container-checkout {
+        width: 100%;
+        height: 100vh;
+        padding: 0;
+        margin: 0 auto;
+    }
+    
+    .checkout {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 350px 350px;
+        grid-template-rows: 500px 500px;
+        margin: 0 30px;
+    }
+    
+    .border {
+        width: 310px;
+        height: 1px;
+        margin: 15px auto;
+        background-color: lightgrey;
+    }
+    
+    .coupon {
+        width: 310px;
+        display: flex;
+        margin: 10px auto;
+    }
+    
+    .text-coupon {
+        height: 40px;
+        width: 220px;
+        border-radius: 8px;
+        margin-right: 10px;
+        border: 1px solid lightgray;
+        padding-left: 10px;
+    }
+    
+    .total-container {
+        width: 310px;
+        margin: 0 auto;
+    }
+    
+    .contact-container {
+        width: 90%;
+        height: 100vh;
+        margin: 0 20px;
+        padding-top: 13px;
+    }
+    
+    .name-email {
+        height: 40px;
+        width: 300px;
+        border: 1px solid lightgray;
+        border-radius: 8px;
+        background-color: #EAEFEF;
+        color: gray;
+        font-size: 12px;
+        font-weight: 500;
+        padding-left: 10px;
+    }
+    
+    .contact-grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 10px auto;
+        column-gap: 20px;
+    } 
+    
+    .select {
+        height: 40px;
+        width: 120px;
+        border-radius: 8px;
+        border: 1px solid lightgray;
+        background-color: #EAEFEF;
+        padding-left: 10px;
+        font-size: 14px;
+    }
+    
+    .postal {
+        width: 160px;
+        height: 35px;
+        border-radius: 8px;
+        border: 1px solid lightgray;
+        background-color: #EAEFEF;
+        padding-left: 10px;
+        font-size: 14px;
+    }
+    
+    .continue {
+        height: 40px;
+        width: 320px;
+        background-color: #212121;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        border-radius: 8px;
+        color: #EAEFEF;
+        text-decoration: none;
+        letter-spacing: 1px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 600;
+    }
+    
+    .continue:hover {
+        background-color: #EAEFEF;
+        color: #212121;
+        border: 1px solid lightgray;
+    }
+}
+
+@media ( max-width: 425px ){
+    
+    .container-checkout {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+    
+    .checkout {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 360px;
+        grid-template-rows: 500px 500px;
+        margin: 0 30px;
+    }
+    
+    .menu {
+        background-color: #EAEFEF;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+    
+    .border {
+        width: 320px;
+        height: 1px;
+        margin: 15px auto;
+        background-color: lightgrey;
+    }
+    
+    .coupon {
+        width: 320px;
+        display: flex;
+        margin: 10px auto;
+    }
+    
+    .text-coupon {
+        height: 40px;
+        width: 200px;
+        border-radius: 8px;
+        margin-right: 10px;
+        border: 1px solid lightgray;
+        padding-left: 10px;
+    }
+    
+    .button-a {
+        height: 40px;
+        width: 120px;
+        border-radius: 8px;
+        background-color: #212121;
+        text-decoration: none;
+        font-size: 14px;
+        letter-spacing: 1px;
+        color: white;
+    }
+    
+    .button-a:hover {
+        background-color: whitesmoke;
+        color: #212121;
+        border: 1px solid lightgrey;
+    }
+    
+    .button {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .total-container {
+        width: 320px;
+        margin: 0 auto;
+    }
+    
+    .sub-total {
+        width: 100%;
+        height: 25px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 600;
+        color: gray;
+    }
+    
+    .total {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #212121;
+    }
+    
+    .contact {
+        background-color: white;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 8px;
+    }
+    
+    .name-email {
+        height: 40px;
+        width: 300px;
+        border: 1px solid lightgray;
+        border-radius: 8px;
+        background-color: #EAEFEF;
+        color: gray;
+        font-size: 12px;
+        font-weight: 500;
+        padding-left: 10px;
+    }
+    
+    .contact-grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 10px auto;
+        column-gap: 20px;
+    } 
+    
+    .select {
+        height: 40px;
+        width: 150px;
+        border-radius: 8px;
+        border: 1px solid lightgray;
+        background-color: #EAEFEF;
+        padding-left: 10px;
+        font-size: 14px;
+    }
+    
+    .postal {
+        width: 125px;
+        height: 35px;
+        border-radius: 8px;
+        border: 1px solid lightgray;
+        background-color: #EAEFEF;
+        padding-left: 10px;
+        font-size: 14px;
+    }
+    
+    .continue {
+        height: 40px;
+        width: 310px;
+        background-color: #212121;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        border-radius: 8px;
+        color: #EAEFEF;
+        text-decoration: none;
+        letter-spacing: 1px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 600;
+    }
+    
+    .continue:hover {
+        background-color: #EAEFEF;
+        color: #212121;
+        border: 1px solid lightgray;
+    }
+}
